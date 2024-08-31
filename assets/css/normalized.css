@@ -1,0 +1,165 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* FONTAWSOME VERSION 6.6.0 ICONS CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+
+@font-face {
+    font-family: 'CFcFont';
+    src: url('../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Regular-webfont.ttf') format('ttf'),
+         url('../fonts/Mark\ Simonson\ -\ Proxima\ Nova\ Alt\ Regular-webfont.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'CFcFont', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+button{
+    cursor: pointer;
+    font-family: 'CFcFont', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+.container{
+    width: 100%;
+    max-width:1600px ;
+    margin: 0px auto;
+}
+.component-section{
+   padding: 50px 30px;
+}
+
+:root {
+    --primary-color: #00a0b5;
+    --secondary-color: #f22e8a;
+    --light-bg: #EBF6F8;
+    --semi-light-bg: #D8ECF0;
+    --border-color: #9BD0DA;
+    --light-border-color: #9decf7;
+    --dark-bg: #86C6D3;
+    --text-font-color: #002930;
+    --dark-font-color: #00191d;
+    --secondary-heading-color: #00a0b5;
+    --light-pink : #ffedf3;
+    --button-pink :#F74E95;
+    --semi-light-bg:#FFDBE7;
+    --pink-text-color:#2B0214;
+    --font-size: 16px;
+    --padding: 10px;
+    --heading-font-size: ;
+    --secondar-heading-font-size: ;
+    --linear-gradiant-color: transparent linear-gradient(230deg, #00a0b5 0%, #7ae2f0 100%) 0% 0% no-repeat;
+  }
+
+  .dark-bg{
+    background: var(--dark-bg);
+  }
+  .light-bg{
+    background: var(--light-bg);
+  }
+  .card-bg{
+    background: var(--light-bg);
+  }
+  .submit-btn-bg{
+    background: var(--primary-color);
+    padding: 6px 15px;
+    text-align: left;
+    color:#fff;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    position: relative;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+
+  }
+  .submit-btn-bg:hover{
+    background: var(--linear-gradiant-color);
+    border: 1px solid var(--border-color);
+    
+  }
+ 
+ .submit-btn-bg::after{
+    background: #00a6bf url(../svg/white-right-arrow.svg) no-repeat 50%;
+    background-size: 16px 16px;
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: width .2s ease-in-out;
+    width: 45px;
+    transition: right .2s ease-in-out;
+ }
+ .submit-btn-bg:hover::after {
+    right: -4px;
+}
+
+
+/* enquiry model start */
+.enquiry-model-container{
+    position: absolute;
+    left: auto;
+    right: 0;
+    background-color: #0082a8 !important;
+    border-radius: .4rem;
+    min-width: 300px;
+
+
+}
+.enquiry-model-container::before{
+    border: 7px solid transparent;
+    border-bottom-color: #0082a8;
+    content: "";
+    position: absolute;
+    right: 80px;
+    top: -13px;
+}
+.inner-model-box{
+    padding: 20px;
+}
+.form-group{
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
+
+}
+
+.phone-input-container{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.input-flag-container{
+    left: 0;
+    right: auto;
+    bottom: 0;
+    padding: 1px;
+    position: absolute;
+    top: 0;
+
+}
+
+/* enquiry model end */
+
+
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+.d-flex {
+    display: flex !important;
+}
